@@ -1,3 +1,4 @@
 python==3.9
 streamlit==1.32.2
 sympy==1.12
+rich==13.7.1
