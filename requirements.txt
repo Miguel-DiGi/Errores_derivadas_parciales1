@@ -1,1 +1,4 @@
+
+establepython==3.9
+
 streamlitsympy
