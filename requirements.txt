@@ -1,4 +1,2 @@
-
-establepython==3.9
-
-streamlitsympy
+streamlit==1.32.2
+sympy==1.12
