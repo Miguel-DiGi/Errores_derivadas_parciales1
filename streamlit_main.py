@@ -5,7 +5,7 @@ from sympy import symbols, sympify, sqrt, diff, re, im
 st.title("Calculadora de Error Propagado (Derivadas Parciales)")
 st.markdown("""
 Esta app calcula el error propagado de una función de varias variables usando la fórmula de la suma en cuadratura de las derivadas parciales.
-Puedes usar notación científica como `3.14e-15` o `6.022*10**23`.
+Puedes usar notación científica como `3.14*10^-15` o `6.022*10**23`.
 """)
 
 # --- Entradas del Usuario ---
@@ -13,7 +13,7 @@ st.markdown("---")
 st.subheader("1. Función y Variables")
 
 # Entrada para la expresión de la función
-str_funcion = st.text_input("Introduce la función (ej. `G*m1*m2/r**2` o `V/I`):", value="I*R")
+str_funcion = st.text_input("Introduce la función (ej. `G*m1*m2/r**2` , `V/I`, `m*c^2`):", value="I*R")
 
 # Entrada para las variables en la función
 str_variables = st.text_input("Introduce las variables separadas por comas (ej. `I, R`):", value="I, R")
@@ -21,7 +21,7 @@ str_variables = st.text_input("Introduce las variables separadas por comas (ej. 
 # --- Sección de Constantes ---
 st.markdown("---")
 st.subheader("2. Constantes (opcional)")
-st.markdown("Define aquí las constantes que aparecen en tu función, separadas por comas (ej. `c = 3e8, G = 6.67e-11`).")
+st.markdown("Define aquí las constantes que aparecen en tu función, separadas por comas (ej. `c = 3*10^8, G = 6.67e-11`).")
 str_constantes = st.text_input("Constantes y sus valores:", value="")
 
 # --- Entradas de Valores Medidos e Incertidumbres ---
